@@ -10,7 +10,7 @@ Este ambiente suele ser uno de tipo informal y relajado a comparación de otros 
 Ahora, probablemente te estarás preguntando "Esto que tiene que ver con el área de Procesamiento de Señales", y tranquilo, aquí te lo explico. Esta práctica de laboratorio es denominada "Problema deL cóctel", donde se busca "aplicar el análisis en frecuencia de señales de voz en un problema de captura de señales mezcladas"; es decir, "el problema de la "Fiesta de cóctel" se refiere a la capacidad de un sistema para concentrarse en una sola fuente sonora mientras filtra las demás en un entorno con múltiples emisores de sonido".
 
 
-# Procedimiento:
+### Procedimiento:
 Gracias a lo anteriormente mencionado, el procedimiento a realizar será el siguiente: 
 ##### • Configuración del sistema: En primera instancia, se van a conectar dos micrófonos al sistema de adquisición de datos, estos deben estar ubicados de manera que cada uno capture distintas combinaciones de las señales provenientes de las dos fuentes (en este caso, el número fuentes y micrófonos va a depender de cuantas personas sean quienes integren el grupo, en este caso fueron dos micrófonos y dos fuentes puesto que el grupo esta conformado por dos personas). Así mismo, las personas deben estar posicionadas de forma fija dentro de un espacio escogido a distancias y orientaciones distintas para poder simular un entorno de "Fiesta de cóctel".
 
@@ -20,7 +20,7 @@ Gracias a lo anteriormente mencionado, el procedimiento a realizar será el sigu
 
 ##### • Por último, se procede a evaluar los resultados comparando la señal aislada con la señal original usando métricas de calidad como la relación señal/ruido para así, de esta forma, cualificar el desempeño de la separación.
 
-# Conceptos para tener en cuenta:
+### Conceptos para tener en cuenta:
 ##### • Transformada de Fourier: 
 [^1^] La transformada de Fourier descompone una señal en sus componentes de frecuencia. En otras palabras, convierte una señal en el dominio del tiempo en una representación que permite divisar la distribución de sus frecuencias. 
 [^1^]: FFT. MathWorks. (n.d.). https://la.mathworks.com/help/matlab/math/fourier-transforms.html 
