@@ -34,11 +34,35 @@ Esto es de gran utilidad puesto que muchas señales complejas pueden analizarse 
 El SNR, o mejor conocido por sus siglas en inglés Signal-to-Noise Ratio, o Relación Señal-Ruido, es una medida que se usa en el campo del procesamiento de señales para describir la proporción entre la potencia de la señal útil (lo que se quiere medir o transmitir), y la potencia del ruido, o como la conocemos, las interferencias o distorsiones no deseadas.
 
 # Análisis
-
+Para la elaboración del codigo hay que conocer cada una de las librerias que van a ser requeridas para que el programa se ejecute correctamente:
+ 
 #### - librosa: nos permite procesar los datos de los archivos de audio
 #### - numpy: hacer operaciones matemáticas
 #### - butter: operación de filtro butterworth
-####  - Audio y Display: colocar un reproductor de audio, y poder reproducir el sonido
+#### - Audio y Display: colocar un reproductor de audio, y poder reproducir el sonido
+
+Para poner los audios que se necesiten procesar sin que el código se tenga que modificar a gran medida, unicamente se suben al colab por medio de archivos tu audio, y reemplazar el nombre que tenga tu audio en "audio_file = 'nombre del audio' ", y así, compilar.
+
+<img src="https://github.com/Mida2304/LABORATORIO3/blob/main/audiosub.png?raw=true" width="40%" />
+
+Posteriormente, se grafica la amplitud en cuanto a las ondas del audio con respecto del tiempo que se capturó al momento de que se realizo "la fiesta del coctel" con las dos personas pertenecientes a esta entrega de laboratorio, esto se realizo con los dos microfonos y observar el como se comporta el sonido:
+
+<img src="https://github.com/Mida2304/LABORATORIO3/blob/main/1.png?raw=true" width="40%" />
+<img src="https://github.com/Mida2304/LABORATORIO3/blob/main/2.png?raw=true" width="40%" />
+
+Se graficó despues, utilizando la transformada de Forourier mostrando la incidencia de frecuencias y su intensidad esto ayuda a pasar la primera gráfica que está en el dominio del tiempo al de la frecuencia, se puede ver en una escala de menor a mayor las magnitudes de estas.
+
+<img src="https://github.com/Mida2304/LABORATORIO3/blob/main/1audio.png?raw=true" width="40%" />
+<img src="https://github.com/Mida2304/LABORATORIO3/blob/main/2audi.png?raw=true" width="40%" />
+
+Aquí tenemos dos formas de hacer el filtrado de la señal, a través de ayuda de librerías y con transformada de fourier a secas. En este método es donde más parámetros se pueden configurar, la frecuencia de nyquist, que se define como la mitad de la frecuencia de muestreo, el orden del filtro, los parámetros de frecuencias del filtro, y ya estaría para realizar el filtrado.
+
+<img src="https://github.com/Mida2304/LABORATORIO3/blob/main/audiosconfltro.png?raw=true" width="40%" />
+
+Como último realizamos la ecuación de SNR para comprobar la legibilidad del audio grabado con respecto al ruido ambiente captado, dando un data positivo y alto, en caso de ser cercano a cero o negativo se recomienda regrabar los audio o realizar las tomas en un lugar más silencioso, ya que la calidad del audio seria de muy mala calidad, los Display(Audio() que nos sirvieron para poder generar un ventana la cual reproducir los audios filtrados como los que no.
+
+<img src="https://github.com/Mida2304/LABORATORIO3/blob/main/snr.png?raw=true" width="40%" />
+
 
 # Instrucciones
 *1.Creación del entorno Python:*
